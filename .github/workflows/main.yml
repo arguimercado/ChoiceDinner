@@ -22,12 +22,12 @@ jobs:
         run: ls
         
       - name: Restore
-        run: dotnet ./ChoiceDinner.sln
+        run: dotnet ChoiceDinner.sln
 
       - name: Build
-        run: dotnet build ./ChoiceDinner.sln --configuration Release --no-restore
+        run: dotnet build ChoiceDinner.sln --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./ChoiceDinner.sln --configuration Release --no-build
+        run: dotnet publish ChoiceDinner.sln --configuration Release --no-build
         
           
